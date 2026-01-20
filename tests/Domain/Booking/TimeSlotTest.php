@@ -32,11 +32,11 @@ final class TimeSlotTest extends TestCase
         $this->assertSame($start, $slot->start);
         $this->assertSame($end, $slot->end);
     }
-    
+
     private static function dt(string $value): DateTimeImmutable
     {
         $dt = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s', $value);
-        
+
         self::assertInstanceOf(\DateTimeImmutable::class, $dt);
 
         return $dt;
