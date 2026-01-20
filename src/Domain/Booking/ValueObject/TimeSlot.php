@@ -17,4 +17,13 @@ final readonly class TimeSlot
             throw InvalidTimeSlot::endMustBeAfterStart();
         }
     }
+
+    public function startAt(): DateTimeImmutable
+    {
+        return $this->start;
+    }
+    public function endAt(): DateTimeImmutable
+    {
+        return $this->end;
+    }
 }

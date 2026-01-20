@@ -8,6 +8,6 @@ final class InvalidTimeSlot extends \DomainException
 {
     public static function endMustBeAfterStart(): self
     {
-        return new self('End time must be before start time');
+        return new self('End time must be after start time');
     }
 }

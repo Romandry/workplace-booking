@@ -17,7 +17,7 @@ final class TimeSlotTest extends TestCase
         $end   = self::dt('2026-01-20 10:00:00');
 
         $this->expectException(InvalidTimeSlot::class);
-        $this->expectExceptionMessage('End time must be before start time');
+        $this->expectExceptionMessage('End time must be after start time');
 
         new TimeSlot($start, $end);
     }
