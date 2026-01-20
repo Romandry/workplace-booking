@@ -25,7 +25,7 @@ final class TimeSlotTest extends TestCase
     public function test_it_allows_valid_slot(): void
     {
         $start = self::dt('2026-01-20 10:00:00');
-        $end   = self::dt('2026-01-20 10:00:00');
+        $end   = self::dt('2026-01-20 11:00:00');
 
         $slot = new TimeSlot($start, $end);
 
