@@ -7,9 +7,55 @@
 /public/bundles/
 /var/
 /vendor/
+/var/cache/
+/var/log/
+/var/phpstan/
+/var/test/
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
 /phpunit.xml
 /.phpunit.cache/
+.phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+### PHPStan
+phpstan.neon.dist
+
+### Composer
+/composer.lock
+!composer.lock.example
+
+# PhpStorm / IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+### =========================
+### OS / Tools
+### =========================
+
+.DS_Store
+Thumbs.db
+
+### =========================
+### Temporary / Debug
+### =========================
+
+*.log
+*.tmp
+*.bak
+*.swp
+
+### =========================
+### CI / Runtime
+### =========================
+
+/coverage/
+/build/
