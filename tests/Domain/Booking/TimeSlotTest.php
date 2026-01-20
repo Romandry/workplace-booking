@@ -35,9 +35,9 @@ final class TimeSlotTest extends TestCase
 
     private static function dt(string $value): DateTimeImmutable
     {
-        $dt = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s', $value);
+        $dt = DateTimeImmutable::createFromFormat('Y-m-d H:i:s', $value);
 
-        self::assertInstanceOf(\DateTimeImmutable::class, $dt);
+        self::assertInstanceOf(DateTimeImmutable::class, $dt);
 
         return $dt;
     }
