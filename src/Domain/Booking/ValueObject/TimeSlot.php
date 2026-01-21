@@ -26,4 +26,10 @@ final readonly class TimeSlot
     {
         return $this->end;
     }
+
+    public function overlaps(self $other): bool
+    {
+        return $this->startAt() < $other->endAt()
+            && $other->startAt() < $this->endAt();
+    }
 }
